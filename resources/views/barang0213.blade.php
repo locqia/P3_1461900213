@@ -23,7 +23,7 @@
         text-decoration: none;
         }
     </style>
-
+    
     <div style="overflow-x: auto">
           <table>
               <thead>
@@ -33,6 +33,7 @@
                       <th>Nama Barang</th>
                       
                       <th>Harga Barang</th>
+                      <th>Akses</th>
                      
                     
                   </tr>
@@ -45,6 +46,9 @@
                       <td>{{ $Barang->id }}</td>
                       <td>{{ $Barang->nama}}</td>
                       <td>{{ $Barang->harga }}</td>
+                      <td><a href="#">Edit</a> | 
+                          <a href="#">Hapus</a>
+                      </td>
                       
                     
 

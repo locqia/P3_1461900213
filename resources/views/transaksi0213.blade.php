@@ -33,6 +33,7 @@
                       <th>Id Pelanggan</th>
                       
                       <th>Id Barang</th>
+                      <th>Akses</th>
                      
                     
                   </tr>
@@ -45,6 +46,9 @@
                       <td>{{ $Transaksi->id }}</td>
                       <td>{{ $Transaksi->id_pelanggan}}</td>
                       <td>{{ $Transaksi->id_barang }}</td>
+                      <td><a href="#">Edit</a> | 
+                          <a href="#">Hapus</a>
+                      </td>
                       
                     
 

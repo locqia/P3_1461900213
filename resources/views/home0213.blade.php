@@ -24,9 +24,9 @@
         }
     </style>
 
-<p>Cari Data Pelanggan :</p>
+
 	<form action="/pelanggan0213/cari" method="GET">
-		<input type="text" name="cari" placeholder="Cari Pelanggan .." value="{{ old('cari') }}">
+		<input type="text" name="cari" placeholder="Cari" value="{{ old('cari') }}">
 		<input type="submit" value="CARI">
 	</form>
 
@@ -41,6 +41,8 @@
                       
                       <th>Nama Barang</th>
                       <th>Harga</th>
+                      <th>Akses</th>
+
                      
                      
                   </tr>
@@ -55,6 +57,9 @@
                       <td>{{ $Home->Alamat}}</td>
                       <td>{{ $Home->Nama_barang }}</td>
                       <td>{{ $Home->Harga }}</td>
+                      <td><a href="#">Edit</a> | 
+                          <a href="#">Hapus</a>
+                      </td>
                     
                       
                   </tr>
